@@ -1,6 +1,8 @@
 provider "google" {
   credentials = "key.json"
   region      = "us-central1" 
+  project     = "vivesh-405513"
+
    
 }
 
