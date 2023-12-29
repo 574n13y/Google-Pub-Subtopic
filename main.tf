@@ -14,7 +14,7 @@ module "terraform-google-pubsub-topic" {
 
 
 variable "topic_name" {
-  description = "The name of the Pub/Sub topic"
+  description = "Customer"
   type        = string
 }
 
