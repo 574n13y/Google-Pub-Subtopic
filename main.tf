@@ -6,8 +6,8 @@ provider "google" {
 
 module "pubsub_topic" {
   source = "github.com/mineiros-io/terraform-google-pubsub-topic?ref=v0.1.2"
+  name = "pub-sub-topic"
 
-  topic_name = "example-topic"
 }
 
 
