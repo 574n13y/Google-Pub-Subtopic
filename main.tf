@@ -1,15 +1,14 @@
 provider "google" {
   credentials = "key.json"
+  project     = "vivesh"
   region      = "us-central1"    
 }
 
  module "pubsub_topic" {
   source  = "sysdiglabs/secure-for-cloud/google"
   version = "0.9.11"
-  topic_name = "example-topic"
-  project     = "vivesh"
-
  }
+
 variable "topic_name" {
   description = "The name of the Pub/Sub topic"
   type        = string
