@@ -3,11 +3,6 @@ provider "google" {
   region      = "us-central1"    
 }
 
-terraform {
-  backend "gcs" {
-    bucket = "vivesh"
-  }
-}
  module "secure-for-cloud" {
   source  = "sysdiglabs/secure-for-cloud/google"
   version = "0.9.11"
