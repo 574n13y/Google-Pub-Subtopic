@@ -23,4 +23,9 @@ variable "topic_name" {
 
 resource "google_pubsub_topic" "pubsub_topic" {
   name = var.topic_name
+  labels = {
+    foo = "bar"
+  }
+
+  message_retention_duration = "86600s"
 }
