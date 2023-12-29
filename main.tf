@@ -3,7 +3,7 @@ provider "google" {
   region      = "us-central1"    
 }
 
- module "secure-for-cloud" {
+ module "pubsub_topic" {
   source  = "sysdiglabs/secure-for-cloud/google"
   version = "0.9.11"
 
@@ -13,8 +13,8 @@ variable "topic_name" {
   type        = string
 }
 
-resource "google_pubsub_topic" "my_pubsub_topic" {
-  name = "pub-sub-topic"
+resource "google_pubsub_topic" "pubsub_topic" {
+   name = var.topic_name
   labels = {
     foo = "bar"
   }
