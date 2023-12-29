@@ -110,7 +110,7 @@ Develop Terraform code for creating and managing Google Pub/Subtopic.
     ![sub details](https://github.com/574n13y/Google-Pub-Subtopic/assets/35293085/237ad58a-7569-453f-af38-7043ddc8df76)
 
 
-                                    ********
+                                                                  ***
 
 
 
