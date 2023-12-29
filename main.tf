@@ -1,6 +1,7 @@
 provider "google" {
   credentials = "key.json"
   region      = "us-central1" 
+   
 }
 
 terraform {
@@ -9,9 +10,9 @@ terraform {
   }
 }
 module "pubsub_topic" {
-  source = "https://github.com/574n13y/Google-Pub-Subtopic?ref=v0.1.2"
   name = "pub-sub-topic"
   project     = "vivesh-405513"
+ 
 
 }
 
