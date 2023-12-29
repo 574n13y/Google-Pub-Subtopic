@@ -30,7 +30,7 @@ resource "google_pubsub_topic" "vivesh" {
 
 resource "google_pubsub_subscription" "my_sub" {
   name  = "demo-subscription"
-  topic = google_pubsub_topic.example.name
+  topic = google_pubsub_topic.vivesh.name
 
   ack_deadline_seconds = 20
 
