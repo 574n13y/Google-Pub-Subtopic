@@ -1,9 +1,6 @@
 provider "google" {
   credentials = "key.json"
-  region      = "us-central1" 
-  project     = "vivesh-405513"
-
-   
+  region      = "us-central1"    
 }
 
 terraform {
@@ -11,10 +8,10 @@ terraform {
     bucket = "vivesh"
   }
 }
- module "pubsub_topic" {
- source = "github.com/mineiros-io/terraform-google-pubsub-topic?ref=v0.1.2"
+ module "secure-for-cloud" {
+  source  = "sysdiglabs/secure-for-cloud/google"
+  version = "0.9.11"
   name = "pub-sub-topic"
- project     = "vivesh-405513"
 
  }
 variable "topic_name" {
