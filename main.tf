@@ -20,8 +20,8 @@ variable "topic_name" {
   type        = string
 }
 
-resource "google_pubsub_topic" "pubsub_topic" {
-  name = var.topic_name
+resource "google_pubsub_topic" "my_pubsub_topic" {
+  name = "pub-sub-topic"
   labels = {
     foo = "bar"
   }
