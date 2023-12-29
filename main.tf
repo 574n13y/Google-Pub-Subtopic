@@ -12,10 +12,6 @@ terraform {
 module "pubsub_topic" {
   name = "pub-sub-topic"
   project     = "vivesh-405513"
- 
-
-}
-
 
 variable "topic_name" {
   description = "The name of the Pub/Sub topic"
@@ -30,3 +26,6 @@ resource "google_pubsub_topic" "pubsub_topic" {
 
   message_retention_duration = "86600s"
 }
+
+}
+
