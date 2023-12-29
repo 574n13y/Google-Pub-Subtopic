@@ -9,12 +9,12 @@ terraform {
     bucket = "vivesh"
   }
 }
-module "pubsub_topic" {
-source = "github.com/mineiros-io/terraform-google-pubsub-topic?ref=v0.1.2"
-  name = "pub-sub-topic"
-  project     = "vivesh-405513"
+# module "pubsub_topic" {
+# source = "github.com/mineiros-io/terraform-google-pubsub-topic?ref=v0.1.2"
+#  name = "pub-sub-topic"
+#  project     = "vivesh-405513"
 
-}
+# }
 variable "topic_name" {
   description = "The name of the Pub/Sub topic"
   type        = string
